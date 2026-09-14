@@ -4,7 +4,7 @@ import { plantsData, categories } from './data/plantsData';
 import FilterBar from './components/FilterBar';
 import PlantCard from './components/PlantCard';
 import PlantModal from './components/PlantModal';
-import { Leaf, Sparkles, SunMedium, ShieldCheck } from 'lucide-react';
+import { Sparkles, SunMedium, ShieldCheck } from 'lucide-react';
 
 export default function App() {
   const [selectedCategory, setSelectedCategory] = useState('All');
