@@ -4,13 +4,12 @@ export const categories = [
   "Railing Troughs & Saddle Pots",
   "Floor Rectangular Pots & Troughs",
   "Floor Round Pots & Architectural Containers",
-  "Climbers & Trellis Plants",
+  "Climbers & Creepers",
   "Living Wall / Vertical Modular Pockets",
   "Compact Tabletop & Balcony Shelf Plants",
   "Shrubs",
   "Small Tree",
-  "Herbs",
-  "Creeper"
+  "Herbs"
 ];
 
 export const plantsData = [
@@ -408,10 +407,10 @@ export const plantsData = [
     ]
   },
 
-  // 5. Climbers & Trellis Plants
+  // 5. Climbers & Creepers
   {
     id: 10,
-    category: "Climbers & Trellis Plants",
+    category: "Climbers & Creepers",
     scientificName: "Jasminum sambac",
     commonName: "Arabian Jasmine (Full / Motia)",
     lightSpec: "Full Sun / Partial Shade",
@@ -431,7 +430,7 @@ export const plantsData = [
   },
   {
     id: 22,
-    category: "Climbers & Trellis Plants",
+    category: "Climbers & Creepers",
     scientificName: "Bougainvillea spectabilis",
     commonName: "Climbing Bougainvillea",
     lightSpec: "Extreme Full Sun",
@@ -449,7 +448,7 @@ export const plantsData = [
   },
   {
     id: 23,
-    category: "Climbers & Trellis Plants",
+    category: "Climbers & Creepers",
     scientificName: "Quisqualis indica",
     commonName: "Rangoon Creeper",
     lightSpec: "Full Sun",
@@ -467,7 +466,7 @@ export const plantsData = [
   },
   {
     id: 24,
-    category: "Climbers & Trellis Plants",
+    category: "Climbers & Creepers",
     scientificName: "Pyrostegia venusta",
     commonName: "Flame Vine",
     lightSpec: "Full Sun",
@@ -484,7 +483,7 @@ export const plantsData = [
   },
   {
     id: 25,
-    category: "Climbers & Trellis Plants",
+    category: "Climbers & Creepers",
     scientificName: "Passiflora edulis / caerulea",
     commonName: "Passion Flower Vine",
     lightSpec: "Full Sun to Moderate Shade",
@@ -497,6 +496,23 @@ export const plantsData = [
     images: [
       "/images/plants/plant-25-0.jpg",
       "/images/plants/plant-25-1.jpg"
+    ]
+  },
+  {
+    id: 47,
+    category: "Climbers & Creepers",
+    scientificName: "Mandevilla sanderi",
+    commonName: "Mandevilla",
+    lightSpec: "Morning Sun / Part Shade",
+    minPrice: 45,
+    maxPrice: 95,
+    sizes: [
+      { size: "20 cm Pot with support (60–80 cm)", priceAED: "45 – 95" }
+    ],
+    description: "Tropical vine with large, showy pink trumpet flowers. Ideal for balcony columns, railings, and small trellises.",
+    images: [
+      "/images/plants/plant-47-0.png",
+      "/images/plants/plant-47-1.jpg"
     ]
   },
 
@@ -866,26 +882,7 @@ export const plantsData = [
     ]
   },
 
-  // 11. Creeper
-  {
-    id: 47,
-    category: "Creeper",
-    scientificName: "Mandevilla sanderi",
-    commonName: "Mandevilla",
-    lightSpec: "Morning Sun / Part Shade",
-    minPrice: 45,
-    maxPrice: 95,
-    sizes: [
-      { size: "20 cm Pot with support (60–80 cm)", priceAED: "45 – 95" }
-    ],
-    description: "Tropical vine with large, showy pink trumpet flowers. Ideal for balcony columns, railings, and small trellises.",
-    images: [
-      "/images/plants/plant-47-0.png",
-      "/images/plants/plant-47-1.jpg"
-    ]
-  },
-
-  // 12. Miscellaneous / Accent
+  // 11. Miscellaneous / Accent
   {
     id: 49,
     category: "Floor Round Pots & Architectural Containers",
