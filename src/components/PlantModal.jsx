@@ -21,7 +21,11 @@ export default function PlantModal({ plant, onClose, showPrices = true }) {
             <div className="modal-header-row">
               <span className="modal-kicker">{plant.category}</span>
               {showPrices ? (
-                <div className="modal-price-pill">AED {plant.minPrice} – {plant.maxPrice}</div>
+                <div className="modal-price-pill">
+                  {plant.minPrice === plant.maxPrice
+                    ? `AED ${plant.minPrice}`
+                    : `AED ${plant.minPrice} – ${plant.maxPrice}`}
+                </div>
               ) : (
                 <div className="modal-price-pill">Pricing on request</div>
               )}
@@ -53,7 +57,13 @@ export default function PlantModal({ plant, onClose, showPrices = true }) {
                 <WalletCards size={18} className="box-icon" />
                 <div>
                   <strong>Budget range</strong>
-                  <p>{showPrices ? `${plant.minPrice} – ${plant.maxPrice} AED` : 'Available on request'}</p>
+                  <p>
+                    {showPrices
+                      ? plant.minPrice === plant.maxPrice
+                        ? `${plant.minPrice} AED`
+                        : `${plant.minPrice} – ${plant.maxPrice} AED`
+                      : 'Available on request'}
+                  </p>
                 </div>
               </div>
 

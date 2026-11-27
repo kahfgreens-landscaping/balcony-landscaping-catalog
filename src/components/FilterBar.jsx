@@ -58,7 +58,7 @@ export default function FilterBar({
         <input
           id="priceRange"
           type="range"
-          min="20"
+          min="10"
           max="1000"
           step="10"
           value={maxPriceFilter}
